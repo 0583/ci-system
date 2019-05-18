@@ -9,7 +9,10 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo http://jenkins-ci.org/redhat/jenkins.
 sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
 
 # Jenkins 依赖 Java
-yum install java
+yum install java -y
+
+# 添加依赖 git
+yum install git -y
 
 # 安装 Jenkins
-yum install jenkins
+yum install jenkins -y
